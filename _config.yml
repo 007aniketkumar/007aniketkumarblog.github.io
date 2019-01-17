@@ -1,7 +1,7 @@
 # Site settings
 title: Aniket kumar blog
 email: 
-description: "Musings of a Computer Scientist."
+description: "Musings of an <i>Effective</i> Engineer."
 baseurl: ""
 url: "http://007aniketkumar.github.io"
 github_username:  007aniketkumar
