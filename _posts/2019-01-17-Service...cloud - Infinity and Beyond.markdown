@@ -1,0 +1,26 @@
+---
+layout: post
+comments: false
+title:  "(Service..mesh..cloud - Infinity and Beyond)"
+excerpt: "Let's scale"
+date:   2018-01-17 11:00:00
+mathjax: false
+---
+
+This is more of a to do post, then a ground breaking idea , where I am trying to put down ,how do I envison a scalable system should function.
+I will start with the a story of 2 services. One is to fetch the details of an employee , say Employee Service (written in Java).
+The other service is to fetch details of an Employer say Employer Service. As similar as they may sound , and without bringing the dynamics of 
+and complexities like employee can also be an employer(let's keep that thought for some other day!), they are as different as chalk and cheese.
+
+One is written in Java(Employee Service) , and the Employer Service is written in Go Lang. There are days when the employer wants to figure out the details of employees.
+So , how do they talk to each other . That's a pretty easy answer - How about Json, XML , bytes ...there's no end of options out there!
+
+Now there would be parties interested outside this closed environment , who would be interested to fetch the information of employees and employers. This could be similar to what people look at when they access glassdoor.
+So, now we have both the internal and external consumers of the service. And there are cases when one service calls the other service as well.
+
+That's interesting , but wait , didn't we say that these services are written in different languages, so if I want to test them out on my machine , I will need to have the necessary ammunition with me(jdk , go -lang setup) .
+Let Docker come to your rescue. Create docker images for both the services and you are good to do. The docker images of the services  will have all the dependecies engulfed in them.
+You can push these images on docker Hub, and choose the right authentication mechanism in place, and off yo go.
+Now if someone wants to test this out, you just need to run dokcer run command and provide the image name of the service. The service will start and will it up and running.
+
+So , have we solved the puzzle yet, umm... no not yet..more to follow.
