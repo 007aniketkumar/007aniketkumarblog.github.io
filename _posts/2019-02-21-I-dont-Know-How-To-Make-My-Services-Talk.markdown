@@ -31,4 +31,4 @@ In case of choreography, I can make my services listen to failover/rollback even
 
 Both the above approaches, have their own pros and cons and come with their set of baggages, and its upto the architect to choose one over the other.
 
-But wait, using either of the approach , I will end up building a lot of non-application related code within my service. And of course, I have increased the complexity and probably defeated the purpose of building a microservice from my monolith.  Isn't my microservice supposed to make things quicker, easier , debuggable! What options do I have now,...lets read the next blog of this series
+But wait, using either of the approach , I will end up building a lot of non-application related code within my service. And of course, I have increased the complexity and probably defeated the purpose of building a microservice from my monolith.  Isn't my microservice supposed to make things quicker, easier , debuggable! What options do I have now,...let's check the next blog of this series.
