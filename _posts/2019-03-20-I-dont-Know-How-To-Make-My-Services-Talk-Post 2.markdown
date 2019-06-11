@@ -15,7 +15,7 @@ Let us try to demystify them :
 
 One of the basic definitions that come to mind is, an API gateway handles the North-South traffic, whereas service Mesh handles the East-west traffic. North-South traffic essentially means the requests that are coming at the edge of a cluster from an external client. This is also known as ingress(incoming) and egress(outgoing) especially in the kubernetes world.
 
-A popular analogy can be, when you type www.amazon .in, the request then hits the API gateway of Amazon, which then routes the request to either the desktop site or mobile site.
+A popular analogy can be, when you type www.amazon.in, the request then hits the API gateway of Amazon, which then routes the request to either the desktop site or mobile site.
 Of course, a lot of other complications(DNS, CDN ) play some role as well, but let's just tell them Not TODAY!.
 
 Now my services can run on ephemeral nodes and register themselves on zookeeper /Eureka which in turn talks to the API gateway. 
