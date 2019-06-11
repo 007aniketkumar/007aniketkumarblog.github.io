@@ -1,0 +1,17 @@
+---
+layout: post
+comments: false
+title:  "what if"
+excerpt: "Yes I'm still around."
+date:   2018-12-30 11:00:00
+mathjax: false
+---
+
+Hello world! It nice to find a place in this infinite universe.
+
+what if : I can design highly concurrent server.
+what if : the above server uses Go.
+what if : I have a full blown application running on cloud.
+what if : I complete top 100 leetcode questions
+what if : I post atleast 2 blogs per month.
+what if : I contribute to atleast 2 projects per year.
