@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I am **Aniket Kumar, working on designing scalable applications.
+Scalable applications excite me. I like to experiment and burn my hands with what is regarded as cutting edge. Like to play on leetcode, to bring back my bain in order!
 
-Join me on <a href=" https://www.linkedin.com/in/aniket-kumar-23105a14/">LinkedIn</a>
+Find me on <a href=" https://www.linkedin.com/in/aniket-kumar-23105a14/">LinkedIn</a>
 
