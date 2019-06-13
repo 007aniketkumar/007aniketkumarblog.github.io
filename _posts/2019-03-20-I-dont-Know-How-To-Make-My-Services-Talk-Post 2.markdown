@@ -7,7 +7,8 @@ date:   2019-03-20 11:00:00
 mathjax: false
 ---
 
-This is the continuation of the first series of blog post-https://007aniketkumar.github.io/2019/02/21/I-dont-Know-How-To-Make-My-Services-Talk/, where we talked about the options of using an orchestration based pattern against a choreographer. 
+This is the continuation of the first series of blog <a href =" https://007aniketkumar.github.io/2019/02/21/I-dont-Know-How-To-Make-My-Services-Talk/">post</a>, where we talked about the options of using an orchestration based pattern against a choreographer. 
+
 
 The answered question was where should my routing logic reside. How about the security features, entitlements, logging, tracing. Who should be responsible for handling this? Should I use an API gateway? How about service Mesh. But wait what do these jargons actually mean.
 
@@ -21,12 +22,12 @@ Of course, a lot of other complications(DNS, CDN ) play some role as well, but l
 Now my services can run on ephemeral nodes and register themselves on zookeeper /Eureka which in turn talks to the API gateway. 
 An example of the above implementation can be found under these projects
 
-Basic student service : https://github.com/007aniketkumar/EurekaStudentService .
-The docker image can be downloaded from: docker pull 007aniketkumar/student_eureka_service
+Basic student <a href = "https://github.com/007aniketkumar/EurekaStudentService">service</a>
+The docker image can be downloaded using : docker pull 007aniketkumar/student_eureka_service
 
-Eureka server: https://github.com/007aniketkumar/EurekaStudentServer (where the services register themselves, Zookeeper is another implementation).
+Eureka <a href = "https://github.com/007aniketkumar/EurekaStudentServer">server</a> (where the services register themselves, Zookeeper is another implementation).
 
-Spring Cloud Gateway: https://github.com/007aniketkumar/SpringCloudGatewayEurekaIntegration
+Spring Cloud <a href=" https://github.com/007aniketkumar/SpringCloudGatewayEurekaIntegration">Gateway</a>
 
 All my requests are received at the gateway, and it can make intelligent routing decisions(versioning being one), take care of authentication(OAUTH2), perform telemetry, load balance, circuit breaker(Hystrix) among other functions. My client is unaware of the fact, whether it is hitting the gateway or the actual service. 
 
