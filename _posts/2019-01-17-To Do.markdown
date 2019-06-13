@@ -4,7 +4,9 @@ comments: false
 title:  "(Todo)"
 excerpt: ""
 date:   2018-01-17 11:00:00
+hidden: true
 mathjax: false
+
 ---
 
 This is more of a to do post, then a ground breaking idea , where I am trying to put down ,how do I envison a scalable system should function.
