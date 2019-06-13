@@ -9,7 +9,7 @@ mathjax: false
 
 Hello world! It nice to find a place in this infinite universe.
 
-what if : I can design highly concurrent server.
+what if :I can design highly concurrent server.
 
 what if : the above server uses Go.
 
