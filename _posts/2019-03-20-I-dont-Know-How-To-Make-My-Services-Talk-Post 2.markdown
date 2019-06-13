@@ -12,7 +12,7 @@ This is the continuation of the first series of blog <a href =" https://007anike
 
 The answered question was where should my routing logic reside. How about the security features, entitlements, logging, tracing. Who should be responsible for handling this? Should I use an API gateway? How about service Mesh. But wait what do these jargons actually mean.
 
-Let us try to demystify them :
+Let us try to demystify them:
 
 One of the basic definitions that come to mind is, an API gateway handles the North-South traffic, whereas service Mesh handles the East-west traffic. North-South traffic essentially means the requests that are coming at the edge of a cluster from an external client. This is also known as ingress(incoming) and egress(outgoing) especially in the kubernetes world.
 
