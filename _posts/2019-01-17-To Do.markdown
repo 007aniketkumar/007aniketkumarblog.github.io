@@ -24,3 +24,7 @@ You can push these images on docker Hub, and choose the right authentication mec
 Now if someone wants to test this out, you just need to run dokcer run command and provide the image name of the service. The service will start and will it up and running.
 
 So , have we solved the puzzle yet, umm... no not yet..more to follow.
+
+Next steps :
+
+Create an application using service mesh , with API gateway at the DMZ. 
