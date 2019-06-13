@@ -17,6 +17,7 @@ The other option out there is to use a choreography based approach, where each o
 
 There are still some points to ponder upon, like state management for example - say my service A is dependent on service B which in turn is dependent on service C. In terms of a monolith, this would have been one single transaction. But now that we have broken our monolith into independent components, how do I handle the above scenario of transaction management. Is having state absolutely evil in case of microservices…Not exactly (ref : 
 http://highscalability.com/blog/2015/10/12/making-the-case-for-building-scalable-stateful-services-in-t.html)
+<a href=" https://www.linkedin.com/in/aniket-kumar-23105a14/">LinkedIn</a>
 
 Moreover, there are cases which justify maintaining stateful services, how you handle the state amongst the services is a more important question to answer. The SAGA (https://microservices.io/patterns/data/saga.html) pattern shines in such pattern.
 
