@@ -20,3 +20,5 @@ what if : I complete top 100 leetcode questions
 what if : I post atleast 2 blogs per month.
 
 what if : I contribute to atleast 2 open source projects per year.
+
+what if : I build an application that can make my life easier
