@@ -9,7 +9,7 @@ mathjax: false
 
 This post is more of assimilation of various options that are out there, to make my service A talk to service B. This is a bit of an interesting space where an architect is always in the dilemma of choosing the right approach. Let's try to get our hands a bit dirty, and may the force be with us…
 
-To start with we have a traditional monolithic application. My architect was able to do one of the most difficult tasks,i.e. break this monolith into logical components, so that each of these, can be designed into microservices. These microservices will be true to their name aka, have its own Databases,independently deployed and scaled.
+To start with we have a traditional monolithic application. My architect was able to do one of the most difficult tasks, i.e. break this monolith into logical components, so that each of these, can be designed into microservices. These microservices will be true to their name aka, have its own Databases, independently deployed and scaled.
 
 The architect should also try to ensure couple of points: 
 
@@ -21,7 +21,7 @@ Keeping the above points in mind, the design could have been as simple as using 
 
 The other option out there is to use a choreography based approach, where each of my services can listen/subscribe to an event and based on the event received can take the appropriate routing decision. These events can be published on Kafka cluster(replicated for resiliency) and my services can talk to each other.
 
-There are still some points to ponder upon, like state management for example - say my service A is dependent on service B which in turn is dependent on service C. In terms of a monolith, this would have been one single transaction. But now that we have broken our monolith into independent components, how do I handle the above scenario of transaction management. Is having state absolutely evil in case of microservices…Not exactly . A very convincing set of applications can be found (ref : 
+There are still some points to ponder upon, like state management for example - say my service A is dependent on service B which in turn is dependent on service C. In terms of a monolith, this would have been one single transaction. But now that we have broken our monolith into independent components, how do I handle the above scenario of transaction management. Is having state absolutely evil in case of microservices…Not exactly . A very convincing set of applications can be found 
 <a href=" http://highscalability.com/blog/2015/10/12/making-the-case-for-building-scalable-stateful-services-in-t.html">here</a>.
 
 Moreover, there are cases which justify maintaining stateful services, how you handle the state amongst the services is a more important question to answer. The <a href=" https://microservices.io/patterns/data/saga.html">SAGA</a>
