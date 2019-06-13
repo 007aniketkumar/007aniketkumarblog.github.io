@@ -16,9 +16,9 @@ The architect should also try to ensure couple of points: point 1: Maintain the 
 The other option out there is to use a choreography based approach, where each of my services can listen/subscribe to an event and based on the event received can take the appropriate routing decision. These events can be published on Kafka cluster(replicated for resiliency) and my services can talk to each other.
 
 There are still some points to ponder upon, like state management for example - say my service A is dependent on service B which in turn is dependent on service C. In terms of a monolith, this would have been one single transaction. But now that we have broken our monolith into independent components, how do I handle the above scenario of transaction management. Is having state absolutely evil in case of microservices…Not exactly (ref : 
-"http://highscalability.com/blog/2015/10/12/making-the-case-for-building-scalable-stateful-services-in-t.html")
+http://highscalability.com/blog/2015/10/12/making-the-case-for-building-scalable-stateful-services-in-t.html)
 
-Moreover, there are cases which justify maintaining stateful services, how you handle the state amongst the services is a more important question to answer. The SAGA ("https://microservices.io/patterns/data/saga.html") pattern shines in such pattern.
+Moreover, there are cases which justify maintaining stateful services, how you handle the state amongst the services is a more important question to answer. The SAGA (https://microservices.io/patterns/data/saga.html) pattern shines in such pattern.
 
 In case I use Orchestrator based approach, the transaction management becomes a bit easier, as Orchestrator can take care of undoing all the Database updates, and my services need not take care of this. The biggest drawback is, I am putting the onus of my application on one single component.
 
