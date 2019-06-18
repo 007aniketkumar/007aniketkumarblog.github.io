@@ -1,12 +1,14 @@
 ---
 layout: post
 comments: false
-title:  "Million Connections-What does it actually mean"
-excerpt: "Layman's definitions for understanding this."
-date:   2018-12-30 11:00:00
-mathjax: false
+title:  "Million connections.."
+excerpt: ""
+date:   2019-06-13 11:00:00
+hidden: true
 published: false
----10.0
+mathjax: false
+
+---
 
 To start with people usually say there are a million connections that are supported by an application XYZ (say twitter, whatsapp). 
 What does it really mean? A machine has 65k odd socktes , so with 65k how does can one open million+ connections . 
