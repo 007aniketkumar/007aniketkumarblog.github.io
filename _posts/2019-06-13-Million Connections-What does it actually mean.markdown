@@ -25,3 +25,30 @@ Door(SOCKET) - 10.0.0.0:123
 
 Taking this a bit further , I have 65,535 houses on MG road(I must be a wealthy man!) , still how can I entertain a million guests at a given time.
 
+Drawing pararrel from above analogy, do I really end up buying houses, when I have got many guests coming to my place. Not exactly!
+
+I am having veg and non-veg guests coming at my place, at they are pretty fickle minded, and dont see an eye to eye to each other.What I can really do, is I can have veg cooking process in house 1(port1) and non-veg cooking process in house(2).
+So, now I have tied up the process to my ports.
+
+I have segragated my guests and routed them to correct houses(ports ), but I have still not answered the question for entertaining large number of veg and non veg guests (remember - they are still going to their respective houses /ports) , and there is only one house for each. 
+ I will use the same analogy again, my house can have mulitple doors (sockets),I only need to allocate the right door for my guests , so that I can entertain them better, and they do not get blocked, because some one is taking a lot of time get through one door! 
+ How do I do that :
+ I will say that my Door 1 , is only for my guest, who is coming from Sarjapur and house number 567.
+ 
+ So , now my socket has 5 attributes now :
+ 
+ Door(Socket) - My street address(local IP) + House Number(local port) + Guest Street address(remote IP) + Guest house number(Remote port) .
+ 
+ In case you are wondering , what's the 5th attribute, its the protocol. I have been referring to IP here, but there also be other ways like Http,UDP.
+ A good point to note in the above is, since the socket has both mine as well guest identifier, this is regarded as birectional and is often used for applications like chat services, or where push notifications need to be sent(like sending you the driver details when your cab has arrived)
+ 
+I can have many guests(connections) coming to same house(port) itself, as long as I am able to open as many unique doors for them(sockets) . 
+It all boils down to , my entertaining capability(processing capability) at the end, as to how soon can I manage them!
+
+
+ 
+ 
+
+
+
+
