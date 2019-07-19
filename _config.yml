@@ -2,7 +2,8 @@
 title: Aniket kumar blog
 email: 
 description: "Musings of an <i>Effective</i> Engineer."
-baseurl:"/blog"
+baseurl: "/blog"
+root:"/" 
 url: "http://007aniketkumar.github.io"
 github_username:  007aniketkumar
 
