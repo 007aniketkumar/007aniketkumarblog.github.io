@@ -1,8 +1,11 @@
 ---
 layout: page
 title: About
-<a href= "https://007aniketkumar.github.io">About</a>
+permalink: /about/
 ---
+
+Find more about me <a href= "https://007aniketkumar.github.io">here</a>
+
 <!--permalink: /https://007aniketkumar.github.io/-->
 <!--<a href= "https://007aniketkumar.github.io">About</a>-->
 
